@@ -14,6 +14,7 @@
 		A2332C701CF830110086D381 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2332C6E1CF830110086D381 /* LaunchScreen.storyboard */; };
 		A2332C7B1CF830110086D381 /* CalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2332C7A1CF830110086D381 /* CalcTests.swift */; };
 		A2332C861CF830110086D381 /* CalcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2332C851CF830110086D381 /* CalcUITests.swift */; };
+		A2332C9A1CF83DD40086D381 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2332C991CF83DD40086D381 /* CheckBox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		A2332C811CF830110086D381 /* CalcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2332C851CF830110086D381 /* CalcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcUITests.swift; sourceTree = "<group>"; };
 		A2332C871CF830110086D381 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2332C991CF83DD40086D381 /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				A2332C651CF830110086D381 /* AppDelegate.swift */,
 				A2332C671CF830110086D381 /* ViewController.swift */,
+				A2332C991CF83DD40086D381 /* CheckBox.swift */,
 				A2332C691CF830110086D381 /* Main.storyboard */,
 				A2332C6C1CF830110086D381 /* Assets.xcassets */,
 				A2332C6E1CF830110086D381 /* LaunchScreen.storyboard */,
@@ -193,6 +196,7 @@
 				TargetAttributes = {
 					A2332C611CF830110086D381 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = BQ6DV64DPF;
 					};
 					A2332C751CF830110086D381 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -258,6 +262,7 @@
 			files = (
 				A2332C681CF830110086D381 /* ViewController.swift in Sources */,
 				A2332C661CF830110086D381 /* AppDelegate.swift in Sources */,
+				A2332C9A1CF83DD40086D381 /* CheckBox.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,10 +406,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Calc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BILL.CO.TH.Calc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -412,10 +420,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Calc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BILL.CO.TH.Calc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -484,6 +495,7 @@
 				A2332C8C1CF830110086D381 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A2332C8D1CF830110086D381 /* Build configuration list for PBXNativeTarget "CalcTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +504,7 @@
 				A2332C8F1CF830110086D381 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A2332C901CF830110086D381 /* Build configuration list for PBXNativeTarget "CalcUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +513,7 @@
 				A2332C921CF830110086D381 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
